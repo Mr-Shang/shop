@@ -34,6 +34,7 @@
     shopDao.add(user);
 //    response.sendRedirect("UserList.jsp");
 %>
+
 <a href="index.jsp">继续添加</a>
 <a href="UserList.jsp">用户列表</a>
 

@@ -12,7 +12,7 @@
     <title>添加用户</title>
 </head>
 <body>
-<jsp:include page="inc.jsp"></jsp:include>
+<jsp:include page="../inc/inc.jsp"></jsp:include>
 <form action="add.jsp" method="post">
     <table align="center" border="1">
         <tr>
@@ -39,6 +39,8 @@
             </td>
         </tr>
     </table>
+    <%--<%--%>
+        <%--System.out.println(request.getContextPath());%>--%>
 
 </form>
 

@@ -5,6 +5,6 @@
     <file url="file://$PROJECT_DIR$/src/com/shop/test/test.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/shop/util/DButils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/shop/util/ValidateUtil.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web/add.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/admin/add.jsp" charset="UTF-8" />
   </component>
 </project>

@@ -11,8 +11,10 @@
     <title></title>
 </head>
 <body>
+<%--<jsp:include page="top.jsp"></jsp:include>--%>
+<%@include file="top.jsp"%>
 <h2 align="center">用户管理</h2>
-<a href="index.jsp">添加用户</a>&nbsp;<a href="UserList.jsp">用户列表</a>
+<a href="../admin/index.jsp">添加用户</a>&nbsp;<a href="../admin/UserList.jsp">用户列表</a>
 <hr>
 
 </body>
