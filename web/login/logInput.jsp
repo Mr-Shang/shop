@@ -13,9 +13,13 @@
 <body>
 <h2 align="center">欢迎使用我们的管理系统</h2>
 <hr>
- <form align="center" action="login.jsp" method="post" >
-  用户名： <input type="text" name="username"><br>
-  密&nbsp;码： <input type="password" name="password"><br>
+ <form align="center" action="../login/login.jsp" method="post" >
+  用户名： <label>
+     <input type="text" name="username">
+ </label><br>
+  密&nbsp;码： <label>
+     <input type="password" name="password">
+ </label><br>
    <input type="submit" value="登录">
  </form>
 </body>

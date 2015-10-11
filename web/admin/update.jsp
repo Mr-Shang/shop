@@ -15,6 +15,7 @@
 <%@ page import="com.shop.dao.ShopDao" %>
 <%@ page import="com.shop.dao.daoFactory" %>
 <%@ page import="com.shop.util.ValidateUtil" %>
+<%@ page import="java.sql.SQLException" %>
 <%--
   Created by IntelliJ IDEA.
   User: asus-pc
@@ -41,13 +42,23 @@
 <%
   }
   ShopDao shopDao=daoFactory.getShopDao();
-  User user = shopDao.load(userId);
+  User user = null;
+  try {
+    user = shopDao.load(userId);
+    user.setPassword(password);
+    user.setNickname(nickname);
+  } catch (SQLException e) {
+    e.printStackTrace();
+  }
 //  user.setUsername(uername);
-  user.setPassword(password);
-  user.setNickname(nickname);
+
 //  System.out.println(user);
 //  ShopDao shopDao = daoFactory.getShopDao();
-  shopDao.update(user);
+  try {
+    shopDao.update(user);
+  } catch (SQLException e) {
+    e.printStackTrace();
+  }
   response.sendRedirect("UserList.jsp");
 %>
 <%--<a href="index.jsp">继续添加</a>--%>

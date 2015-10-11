@@ -1,5 +1,6 @@
 <%@ page import="com.shop.dao.ShopDao" %>
 <%@ page import="com.shop.dao.daoFactory" %>
+<%@ page import="java.sql.SQLException" %>
 <%--
   Created by IntelliJ IDEA.
   User: asus-pc
@@ -16,7 +17,11 @@
 <%
     int UserId = Integer.parseInt(request.getParameter("UserId"));
     ShopDao shopDao = daoFactory.getShopDao();
-    shopDao.delete(UserId);
+    try {
+        shopDao.delete(UserId);
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
     response.sendRedirect("UserList.jsp");
 %>
 

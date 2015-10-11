@@ -24,12 +24,11 @@
         User user = null;
         try {
             user = shopDao.login(username, password);
+            System.out.println(user.toString());
         } catch (SQLException e) {
             e.printStackTrace();
         }
         session.setAttribute("loginUser", user);
-//        assert user != null;
-        System.out.println(user.toString());
         response.sendRedirect(request.getContextPath() + "/admin/UserList.jsp");
     } catch (ShopException e) {
         e.printStackTrace();
