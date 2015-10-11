@@ -13,7 +13,7 @@
 <body>
 <h2 align="center">欢迎使用我们的管理系统</h2>
 <hr>
- <form align="center" action="../login/login.jsp" method="post" >
+ <form action="${pageContext.request.contextPath}/login/login.jsp" method="post"  align="center" >
   用户名： <label>
      <input type="text" name="username">
  </label><br>

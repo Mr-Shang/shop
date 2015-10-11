@@ -20,11 +20,16 @@
 //  }
 %>
 <div align="right">
-    欢迎<%=user.getNickname()%>使用我们的系统
+    <%--<%System.out.println(user.getNickname());%>--%>
+    欢迎<a href=""> <%=user.getNickname()%></a> 使用我们的系统
     <a href="<%=request.getContextPath()%>/admin/UserList.jsp">用户管理</a>&nbsp;
     <a href="<%=request.getContextPath()%>/login/logout.jsp">退出系统</a>
 
 </div>
+<b>
+    <hr color="blue">
+
+</b>
 
 </body>
 </html>

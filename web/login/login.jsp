@@ -20,11 +20,13 @@
     try {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+//        System.out.println(username);
+//        System.out.println(password);
         ShopDao shopDao = daoFactory.getShopDao();
         User user = null;
         try {
             user = shopDao.login(username, password);
-            System.out.println(user.toString());
+//            System.out.println(user.toString());
         } catch (SQLException e) {
             e.printStackTrace();
         }

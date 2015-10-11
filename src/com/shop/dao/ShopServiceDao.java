@@ -165,7 +165,7 @@ public class ShopServiceDao implements ShopDao {
             while (resultset.next()) {
                 user = new User();
                 user.setUserId(resultset.getInt("UserId"));
-                user.setUsername(resultset.getString("Uername"));
+                user.setUsername(resultset.getString("Username"));
                 user.setPassword(resultset.getString("Password"));
                 user.setNickname(resultset.getString("Nickname"));
             }
