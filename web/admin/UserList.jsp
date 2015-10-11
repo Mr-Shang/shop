@@ -1,3 +1,4 @@
+<%--suppress ALL --%>
 <%@ page import="com.shop.dao.ShopDao" %>
 <%@ page import="com.shop.dao.daoFactory" %>
 <%@ page import="java.util.List" %>
@@ -19,7 +20,7 @@
     %>
 </head>
 <body>
-<jsp:include page="/inc/inc.jsp"></jsp:include>
+<jsp:include page="../inc/inc.jsp"></jsp:include>
 <table align="center" border="1" width="500">
     <tr align="center">
         <td>用户标识</td>

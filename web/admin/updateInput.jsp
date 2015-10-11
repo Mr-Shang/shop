@@ -1,3 +1,4 @@
+<%--suppress ALL --%>
 <%@ page import="com.shop.util.ValidateUtil" %>
 <%@ page import="com.shop.dao.ShopServiceDao" %>
 <%@ page import="com.shop.dao.daoFactory" %>

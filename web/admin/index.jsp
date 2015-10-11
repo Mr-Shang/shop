@@ -1,3 +1,4 @@
+<%--suppress ALL --%>
 <%@ page import="com.shop.util.ValidateUtil" %>
 <%--
   Created by IntelliJ IDEA.
